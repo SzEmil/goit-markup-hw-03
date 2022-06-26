@@ -41,6 +41,10 @@ header {
 a {
   text-decoration: none;
 }
+/* TUTAJ DOROBIC BY ODZIELNEI BYLO CHYBA PSEUDOKLASY SA POTRZEBNE */
+.header-display-format {
+  display: flex;
+}
 /* styl bazowy jako rodzic(linki z contentem, kontaktem i adresem --- przy okazji jest to priorytet (3) rzedu czyli .klasa */
 .social-link {
   font-weight: 500;
@@ -48,6 +52,12 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  padding: 32px 0px 0px 93px;
+}
+.social-link .header-social-link {
+  display: flex;
+  padding: 32px 0px 0px 93px;
 }
 .social-link .link-info {
   color: var(--basic-text-color);
@@ -135,9 +145,9 @@ a {
   width: 1170px;
   margin: 94px 0px 94px 215px;
 }
-/* .main-paragraph-list {
+.main-paragraph-list {
   display: flex;
-} */
+}
 /* styl dla naglowkow h1:w glownym miejscu strony, h2: podtytuły sekcji, h3: podtytuły paragrafu */
 h1 {
   width: 696px;
@@ -161,6 +171,11 @@ h2 {
   width: 1170;
   margin: 0px 0px 0px 215px;
 }
+
+/* Fortmatowanie photo main */
+.main-photo-format {
+  display: flex;
+}
 /* Styl do nagłówków fotek */
 .photo-title-main {
   font-weight: 500;
@@ -181,6 +196,8 @@ h2 {
   color: var(--paragraph-link-content);
 }
 h3 {
+  padding-bottom: 10px;
+  padding-right: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
