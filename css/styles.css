@@ -30,6 +30,7 @@ body {
   --button-bacground-portfolio: #f5f4fa;
   --our-team-background: #f5f4fa;
   --link-contact-footer: rgba(255, 255, 255, 0.6);
+  --portofolio-photo-background: #eeeeee;
 }
 /* styl naglowka */
 header {
@@ -37,6 +38,7 @@ header {
   top: 0px;
   width: 1600px;
   height: 80px;
+  border: 1px solid #ececec;
 }
 /* style linków: brak podkreslenia */
 a {
@@ -293,8 +295,22 @@ footer {
   background-color: var(--button-color);
   color: var(--white-color);
 }
+.portfolio-button-mod {
+  margin: 94px 0px 94px 215px;
+}
 .portfolio-button-format {
   display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.portfolio-button-format-mod:nth-child(n + 2) {
+  padding-left: 8px;
+}
+.portfolio-photo-background {
+  width: 370;
+  height: 404;
+  background-color: var(--white-color);
+  border: 1px solid var(--portofolio-photo-background);
 }
 .photo-title-portfolio {
   font-weight: 700;
@@ -303,6 +319,7 @@ footer {
 
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
+  padding: 20px 0px 4px 24px;
 }
 
 .photo-description-portfolio {
@@ -312,10 +329,13 @@ footer {
   /* identical to box height, or 188% */
   letter-spacing: 0.03em;
   color: var(--paragraph-link-content);
+  padding: 0px 0px 20px 24px;
 }
 
 .portfolio-photo-format {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .link-contact-footer {
   color: var(--link-contact-footer);
