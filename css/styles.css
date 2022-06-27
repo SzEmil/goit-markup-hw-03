@@ -41,6 +41,11 @@ header {
 a {
   text-decoration: none;
 }
+.header-link-format {
+  width: 254px;
+  padding-left: 93px;
+  padding-right: 371px;
+}
 /* TUTAJ DOROBIC BY ODZIELNEI BYLO CHYBA PSEUDOKLASY SA POTRZEBNE */
 .header-display-format {
   display: flex;
@@ -53,11 +58,14 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  padding: 32px 0px 0px 93px;
+  padding-top: 32px;
 }
-.social-link .header-social-link {
-  display: flex;
-  padding: 32px 0px 0px 93px;
+/* Pseudoklasy w menu w celu zrobienia oddzielen pomiedzy opcjami */
+.header-link-mod:nth-child(n + 2) {
+  padding-left: 46px;
+}
+.header-contact-mod:nth-child(2) {
+  padding-left: 50px;
 }
 .social-link .link-info {
   color: var(--basic-text-color);
@@ -167,14 +175,36 @@ h2 {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+/* Fortmatowanie photo main dostepne usługi firmy*/
+.main-content {
+  width: 1200px;
+  margin-left: 215px;
+  margin-top: 94px;
+}
+.main-header-second-content {
+  padding: 0px 0px 50px 400px;
+}
 .main-photo-content-format {
+  display: flex;
   width: 1170;
-  margin: 0px 0px 0px 215px;
+}
+.main-photo-content-format-mod:nth-child(n + 2) {
+  padding-left: 30px;
 }
 
-/* Fortmatowanie photo main */
-.main-photo-format {
+/* Formatowanie informacji o teamie */
+.main-team {
+  width: 1600px;
+  height: 648px;
+  background-color: var(--our-team-background);
+}
+.main-photo-team-format {
   display: flex;
+  padding-left: 215px;
+  padding-top: 50px;
+}
+.main-photo-team-mod:nth-child(n + 2) {
+  padding-left: 30px;
 }
 /* Styl do nagłówków fotek */
 .photo-title-main {
@@ -205,11 +235,9 @@ h3 {
   text-transform: uppercase;
 }
 
-.our-team {
-  background-color: var(--our-team-background);
-}
-
 footer {
+  width: 1600px;
+  height: 252px;
   background: var(--main-baner-color);
 }
 
@@ -229,15 +257,15 @@ footer {
   /* identical to box height, or 188% */
   letter-spacing: 0.06em;
   color: var(--basic-text-color);
-
-  display: flex;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--button-color);
   color: var(--white-color);
 }
-
+.portfolio-button-format {
+  display: flex;
+}
 .photo-title-portfolio {
   font-weight: 700;
   font-size: 18px;
@@ -254,6 +282,10 @@ footer {
   /* identical to box height, or 188% */
   letter-spacing: 0.03em;
   color: var(--paragraph-link-content);
+}
+
+.portfolio-photo-format {
+  display: flex;
 }
 .link-contact-footer {
   color: var(--link-contact-footer);
