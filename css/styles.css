@@ -4,8 +4,9 @@ body {
   color: #212121;
 }
 .container {
-  width: 1200px;
+  width: 1600px;
   margin: 0 auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 /* POTEM DODAĆ WAŻNE: MNOŻNIK LINE HEIGHT= TO line-height/font-size */
 
