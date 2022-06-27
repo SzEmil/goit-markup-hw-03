@@ -157,6 +157,9 @@ a {
 .main-paragraph-list {
   display: flex;
 }
+.main-paragraph-mod:nth-child(n + 2) {
+  padding-left: 30px;
+}
 /* styl dla naglowkow h1:w glownym miejscu strony, h2: podtytuły sekcji, h3: podtytuły paragrafu */
 h1 {
   width: 696px;
