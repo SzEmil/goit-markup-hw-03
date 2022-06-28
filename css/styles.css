@@ -33,6 +33,7 @@ body {
   --our-team-background: #f5f4fa;
   --link-contact-footer: rgba(255, 255, 255, 0.6);
   --portofolio-photo-background: #eeeeee;
+  --header-line-bottom-color: #ececec;
 }
 /* styl naglowka */
 header {
@@ -40,7 +41,7 @@ header {
   top: 0px;
   width: 1600px;
   height: 80px;
-  border: 1px solid #ececec;
+  border: 1px solid var(--header-line-bottom-color);
 }
 /* style linków: brak podkreslenia */
 a {
@@ -113,17 +114,15 @@ a {
 .logo .logo-part2 {
   color: var(--white-color);
 }
-
+/* ----------------------STYLOWANIE ZAWARTOŚCI STRONY MAIN------------------------ */
 /* styl głównego banerru z przyciskiem */
-.top-banner {
+.main-top-banner {
   background: var(--main-baner-color);
   text-align: center;
   width: 1600px;
   height: 600px;
 }
-
-/* Głowny przycisk strony main */
-.button-main {
+.main-button {
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -131,16 +130,16 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.text-button {
+.main-button-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
 
-  /* identical to box height, or 188% */
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
-/* styl glowneego paragrafu na stronie */
+
+/* Styl glowneego paragrafu na stronie */
 .main-paragraph {
   font-size: 14px;
   line-height: 1.71;
@@ -152,10 +151,9 @@ a {
 }
 .main-paragraph-list {
   display: flex;
+  column-gap: 30px;
 }
-.main-paragraph-mod:nth-child(n + 2) {
-  padding-left: 30px;
-}
+
 /* styl dla naglowkow h1:w glownym miejscu strony, h2: podtytuły sekcji, h3: podtytuły paragrafu */
 h1 {
   width: 696px;
@@ -185,10 +183,8 @@ h2 {
 }
 .main-photo-content-format {
   display: flex;
-  width: 1170;
-}
-.main-photo-content-format-mod:nth-child(n + 2) {
-  padding-left: 30px;
+  column-gap: 30px;
+  width: 1170px;
 }
 
 /* Formatowanie informacji o teamie */
@@ -203,9 +199,7 @@ h2 {
 }
 .main-photo-team-format {
   display: flex;
-}
-.main-photo-team-mod:nth-child(n + 2) {
-  padding-left: 30px;
+  column-gap: 30px;
 }
 .main-photo-team-background {
   width: 270px;
@@ -245,7 +239,7 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
+/* Stylizacja stopki strony */
 footer {
   width: 1600px;
   height: 252px;
@@ -259,7 +253,6 @@ footer {
   font-size: 14px;
   line-height: 1.71;
 
-  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
@@ -273,21 +266,19 @@ footer {
 .logo-footer-mod:nth-child(n + 3) {
   padding-top: 9px;
 }
-/*----------------- STYLE DO PORTFOLIO  ---------------------------*/
+/*------------------------------- STYLE DO PORTFOLIO  ---------------------------*/
 .button-portfolio {
   cursor: pointer;
   background: var(--button-bacground-portfolio);
   border-radius: 4px;
+  box-decoration-break: unset;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
 
-  /* identical to box height, or 188% */
   letter-spacing: 0.06em;
   color: var(--basic-text-color);
-}
-.portfolio-button-text {
   padding: 6px 22px 6px 22px;
 }
 .button-portfolio:hover,
@@ -302,15 +293,13 @@ footer {
 }
 .portfolio-button-format {
   display: flex;
-  padding-left: 295px;
+  justify-content: center;
+  column-gap: 8px;
   padding-bottom: 50px;
 }
-.portfolio-button-format-mod:nth-child(n + 2) {
-  padding-left: 8px;
-}
 .portfolio-photo-background {
-  width: 370;
-  height: 404;
+  width: 370px;
+  height: 404px;
   background-color: var(--white-color);
   border: 1px solid var(--portofolio-photo-background);
 }
