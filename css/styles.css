@@ -113,7 +113,7 @@ a {
 .logo .logo-part2 {
   color: var(--white-color);
 }
-/* ----------------------STYLOWANIE ZAWARTOŚCI STRONY MAIN------------------------ */
+/* ----------------------STYLOWANIE SEKCJI------------------------ */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -121,13 +121,13 @@ a {
 .section-paragraph {
   padding-bottom: 94px;
 }
-.section .section-team {
-  width: 1600px;
-  height: 648px;
-  background-color: var(--our-team-background);
-  padding-bottom: 20px;
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-/* styl głównego banerru z przyciskiem */
+/* ----------------------STYLOWANIE ZAWARTOŚCI STRONY MAIN------------------------ */
+
+/* -------styl głównego banerru z przyciskiem ----------------*/
 .main-top-banner {
   background: var(--main-baner-color);
   text-align: center;
@@ -151,7 +151,7 @@ a {
   color: var(--white-color);
 }
 
-/* Styl glowneego paragrafu na stronie */
+/*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
 .main-paragraph {
   font-size: 14px;
   line-height: 1.71;
@@ -184,7 +184,7 @@ h2 {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-/* Fortmatowanie photo main dostepne usługi firmy*/
+/*------------------------- Fortmatowanie photo main dostepne usługi firmy-------------*/
 .main-content {
   width: 1200px;
 }
@@ -197,15 +197,15 @@ h2 {
   width: 1170px;
 }
 
-/* Formatowanie informacji o teamie */
+/*-------------------------------- Formatowanie informacji o teamie-------------------- */
 .main-header-second-team {
   padding: 0px 0px 50px 480px;
 }
-/* .main-team {
+.main-team {
   width: 1600px;
   height: 648px;
   background-color: var(--our-team-background);
-} */
+}
 .main-photo-team-format {
   display: flex;
   column-gap: 30px;
@@ -219,7 +219,7 @@ h2 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-/* Styl do nagłówków fotek */
+/*------------------ Styl do nagłówków fotek */
 .main-photo-title {
   font-weight: 500;
   font-size: 16px;
