@@ -330,9 +330,11 @@ footer {
   color: var(--paragraph-link-content);
   padding: 0px 0px 20px 24px;
 }
+/* TUTAJ TRZEBA COŚ PORRAWIĆ BY PRZYKLEIC BIALY BOX DO ZDJECIA */
 .portfolio-photo-description-mod {
   width: 370px;
   height: 110px;
+  border-top: 1px solid var(--portofolio-photo-background);
   border-bottom: 1px solid var(--portofolio-photo-background);
   border-right: 1px solid var(--portofolio-photo-background);
   border-left: 1px solid var(--portofolio-photo-background);
