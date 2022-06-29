@@ -57,7 +57,7 @@ a {
   display: flex;
 }
 /* styl bazowy jako rodzic(linki z contentem, kontaktem i adresem --- przy okazji jest to priorytet (3) rzedu czyli .klasa */
-.social-link {
+.header-social-link {
   font-weight: 500;
   /* line-height: 1.14; */
   font-size: 14px;
@@ -73,25 +73,25 @@ a {
 .header-contact-mod:nth-child(2) {
   padding-left: 50px;
 }
-.social-link .link-info {
+.header-social-link .link-info {
   color: var(--basic-text-color);
 }
 /* styl z pseudoklasą hover: interakcja po najechaniu myszką czy klawiaturą */
-.social-link .link-info:hover,
-.social-link .link-info:focus {
+.header-social-link .link-info:hover,
+.header-social-link .link-info:focus {
   color: var(--links-color);
 }
-.social-link .link-info:active {
+.header-social-link .link-info:active {
   color: var(--links-color);
 }
-.social-link .link-contact {
+.header-social-link .link-contact {
   color: var(--paragraph-link-content);
 }
-.social-link .link-contact:hover,
-.social-link .link-contact:focus {
+.header-social-link .link-contact:hover,
+.header-social-link .link-contact:focus {
   color: var(--links-color);
 }
-.social-link .link-contact:active {
+.header-social-link .link-contact:active {
   color: var(--links-color);
 }
 
@@ -115,6 +115,14 @@ a {
   color: var(--white-color);
 }
 /* ----------------------STYLOWANIE ZAWARTOŚCI STRONY MAIN------------------------ */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-paragraph {
+  padding-bottom: 94px;
+}
+
 /* styl głównego banerru z przyciskiem */
 .main-top-banner {
   background: var(--main-baner-color);
@@ -147,11 +155,12 @@ a {
 }
 .main-paragraph-format {
   width: 1170px;
-  margin: 94px 0px 94px 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .main-paragraph-list {
   display: flex;
-  column-gap: 30px;
+  justify-content: space-between;
 }
 
 /* styl dla naglowkow h1:w glownym miejscu strony, h2: podtytuły sekcji, h3: podtytuły paragrafu */
@@ -162,7 +171,7 @@ h1 {
   font-size: 44px;
   line-height: 1.36;
   color: var(--white-color);
-  /* or 136% */
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 200px 0px 30px 237px;
@@ -176,7 +185,6 @@ h2 {
 /* Fortmatowanie photo main dostepne usługi firmy*/
 .main-content {
   width: 1200px;
-  margin-top: 94px;
 }
 .main-header-second-content {
   padding: 0px 0px 50px 400px;
@@ -211,7 +219,7 @@ h2 {
   border-radius: 0px 0px 4px 4px;
 }
 /* Styl do nagłówków fotek */
-.photo-title-main {
+.main-photo-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
@@ -220,7 +228,7 @@ h2 {
   letter-spacing: 0.03em;
   padding-top: 30px;
 }
-.photo-description-main {
+.main-photo-description {
   font-size: 16px;
   line-height: 1.1875;
 
@@ -239,17 +247,17 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-/* Stylizacja stopki strony */
+/*------------------------------- Stylizacja stopki strony -----------------------*/
 footer {
   width: 1600px;
   height: 252px;
   background: var(--main-baner-color);
 }
 
-.social-link .social-link-footer {
+.header-social-link .footer-social-link {
   display: inline-block;
 }
-.social-link-footer .link-adres {
+.footer-social-link .link-adres {
   font-size: 14px;
   line-height: 1.71;
 
@@ -297,11 +305,12 @@ footer {
   column-gap: 8px;
   padding-bottom: 50px;
 }
+/* stylizacja zdjęć w portfolio */
 .portfolio-photo-background {
   width: 370px;
   height: 404px;
   background-color: var(--white-color);
-  border: 1px solid var(--portofolio-photo-background);
+  /* border: 1px solid var(--portofolio-photo-background); */
 }
 .photo-title-portfolio {
   font-weight: 700;
@@ -322,7 +331,13 @@ footer {
   color: var(--paragraph-link-content);
   padding: 0px 0px 20px 24px;
 }
-
+.portfolio-photo-description-mod {
+  width: 370px;
+  height: 110px;
+  border-bottom: 1px solid var(--portofolio-photo-background);
+  border-right: 1px solid var(--portofolio-photo-background);
+  border-left: 1px solid var(--portofolio-photo-background);
+}
 .portfolio-photo-format {
   display: flex;
   flex-wrap: wrap;
