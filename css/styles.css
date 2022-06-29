@@ -99,7 +99,6 @@ a {
 .logo {
   width: 145px;
   font-family: "Raleway";
-  font-style: normal;
 
   font-size: 26px;
   line-height: 1.19;
@@ -122,7 +121,12 @@ a {
 .section-paragraph {
   padding-bottom: 94px;
 }
-
+.section .section-team {
+  width: 1600px;
+  height: 648px;
+  background-color: var(--our-team-background);
+  padding-bottom: 20px;
+}
 /* styl głównego banerru z przyciskiem */
 .main-top-banner {
   background: var(--main-baner-color);
@@ -155,8 +159,6 @@ a {
 }
 .main-paragraph-format {
   width: 1170px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .main-paragraph-list {
   display: flex;
@@ -197,14 +199,13 @@ h2 {
 
 /* Formatowanie informacji o teamie */
 .main-header-second-team {
-  padding: 94px 0px 50px 480px;
+  padding: 0px 0px 50px 480px;
 }
-.main-team {
+/* .main-team {
   width: 1600px;
   height: 648px;
   background-color: var(--our-team-background);
-  margin-top: 94px;
-}
+} */
 .main-photo-team-format {
   display: flex;
   column-gap: 30px;
