@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 /* zmienne globalne dla:kolorów tekstu,tła,zaznaczanie */
 :root {
@@ -42,10 +43,6 @@ header {
   width: 1600px;
   height: 80px;
   border: 1px solid var(--header-line-bottom-color);
-}
-/* style linków: brak podkreslenia */
-a {
-  text-decoration: none;
 }
 .header-link-format {
   width: 254px;
@@ -77,7 +74,9 @@ a {
 }
 /* styl z pseudoklasą hover: interakcja po najechaniu myszką czy klawiaturą */
 .header-social-link .link-info:hover,
-.header-social-link .link-info:focus {
+.header-social-link .link-info:focus,
+.header-social-link .link-contact:hover,
+.header-social-link .link-contact:focus {
   color: var(--links-color);
 }
 .header-social-link .link-info:active {
@@ -85,10 +84,6 @@ a {
 }
 .header-social-link .link-contact {
   color: var(--paragraph-link-content);
-}
-.header-social-link .link-contact:hover,
-.header-social-link .link-contact:focus {
-  color: var(--links-color);
 }
 .header-social-link .link-contact:active {
   color: var(--links-color);
@@ -126,10 +121,6 @@ a {
   background-color: var(--our-team-background);
   padding-bottom: 0;
 }
-.foot {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .solutions {
   background: var(--main-baner-color);
   text-align: center;
@@ -138,6 +129,11 @@ a {
   padding-top: 0;
   padding-bottom: 0;
 }
+.foot {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 /* ----------------------STYLOWANIE ZAWARTOŚCI STRONY MAIN------------------------ */
 
 /* -------styl głównego banerru z przyciskiem ----------------*/
@@ -159,15 +155,15 @@ a {
 }
 
 /*--------------------------- Styl glowneego paragrafu na stronie -----------------*/
-.main-paragraph {
+.main-advantages-text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--paragraph-link-content);
 }
-.main-paragraph-format {
+.main-advantages-format {
   width: 1170px;
 }
-.main-paragraph-list {
+.main-advantages-list {
   display: flex;
   justify-content: space-between;
 }
@@ -268,13 +264,13 @@ footer {
   color: var(--white-color);
 }
 
-.logo-footer-format {
+.footer-logo-format {
   padding: 60px 0px 0px 0px;
 }
-.logo-footer-mod:nth-child(2) {
+.footer-logo-mod:nth-child(2) {
   padding-top: 20px;
 }
-.logo-footer-mod:nth-child(n + 3) {
+.footer-logo-mod:nth-child(n + 3) {
   padding-top: 9px;
 }
 /*------------------------------- STYLE DO PORTFOLIO  ---------------------------*/
@@ -329,11 +325,14 @@ footer {
   color: var(--paragraph-link-content);
   padding: 0px 0px 20px 24px;
 }
+.portfolio-photo-no-gap {
+  display: block;
+}
 /* TUTAJ TRZEBA COŚ PORRAWIĆ BY PRZYKLEIC BIALY BOX DO ZDJECIA */
 .portfolio-photo-description-mod {
-  width: 370px;
+  display: block;
+  width: 369px;
   height: 110px;
-  border-top: 1px solid var(--portofolio-photo-background);
   border-bottom: 1px solid var(--portofolio-photo-background);
   border-right: 1px solid var(--portofolio-photo-background);
   border-left: 1px solid var(--portofolio-photo-background);
