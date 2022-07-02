@@ -39,7 +39,7 @@ body {
 /* styl naglowka */
 header {
   height: 80px;
-  border: 1px solid var(--header-line-bottom-color);
+  border-bottom: 1px solid var(--header-line-bottom-color);
 }
 .header-link-format {
   padding-left: 93px;
@@ -48,6 +48,8 @@ header {
 .header-display-format {
   display: flex;
   padding-left: 15px;
+  align-items: center;
+  height: 80px;
 }
 /* styl bazowy jako rodzic(linki z contentem, kontaktem i adresem --- przy okazji jest to priorytet (3) rzedu czyli .klasa */
 .header-social-link {
@@ -56,7 +58,6 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  padding-top: 32px;
 }
 /* Pseudoklasy w menu w celu zrobienia oddzielen pomiedzy opcjami */
 .header-link-mod:nth-child(n + 2) {
@@ -94,9 +95,6 @@ header {
   line-height: 1.19;
   color: var(--logo-color2);
 }
-.main-logo-format {
-  padding: 24px 0px 0px 0px;
-}
 .logo .logo-part {
   color: var(--logo-color1);
 }
@@ -118,6 +116,7 @@ header {
   padding-bottom: 0;
 }
 .solutions {
+  display: block;
   background: var(--main-baner-color);
   text-align: center;
   width: 1600px;
@@ -276,6 +275,7 @@ footer {
   background: var(--button-bacground-portfolio);
   border-radius: 4px;
 
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
