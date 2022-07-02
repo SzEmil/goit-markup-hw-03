@@ -8,7 +8,8 @@ body {
 }
 .container {
   width: 1200px;
-  padding-left: 215px;
+  display: block;
+  margin: auto;
 }
 /* POTEM DODAĆ WAŻNE: MNOŻNIK LINE HEIGHT= TO line-height/font-size */
 
@@ -38,8 +39,6 @@ body {
 }
 /* styl naglowka */
 header {
-  left: 0px;
-  top: 0px;
   width: 1600px;
   height: 80px;
   border: 1px solid var(--header-line-bottom-color);
