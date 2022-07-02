@@ -42,9 +42,8 @@ header {
   border: 1px solid var(--header-line-bottom-color);
 }
 .header-link-format {
-  width: 254px;
   padding-left: 93px;
-  padding-right: 371px;
+  padding-right: 364px;
 }
 .header-display-format {
   display: flex;
@@ -276,9 +275,8 @@ footer {
   cursor: pointer;
   background: var(--button-bacground-portfolio);
   border-radius: 4px;
-  box-decoration-break: unset;
 
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
 
@@ -339,7 +337,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-around;
+  justify-content: center;
 }
 .link-contact-footer {
   color: var(--link-contact-footer);
